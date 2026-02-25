@@ -1,6 +1,6 @@
 **Test Plan – EMI Calculator Financial Web Application**
 
-**1. Introduction**
+**1. Introduction**  
 This document outlines the comprehensive testing strategy for the EMI Calculator Financial Web Application available at
 https://emicalculator.net/
 
@@ -20,8 +20,8 @@ The objective of this test plan is to ensure:
 Given the financial nature of the application, precision and consistency are considered critical quality attributes.
 
 
-**2. Scope of Testing**
-**2.1 In-Scope**
+**2. Scope of Testing**  
+**2.1 In-Scope**  
 
 **Functional Modules**
 
@@ -69,10 +69,10 @@ Given the financial nature of the application, precision and consistency are con
 - Financial advisory content outside calculator modules
 
 
-**3. Test Strategy**
+**3. Test Strategy**  
 Testing will follow a multi-layered quality assurance approach.
 
-**3.1 Functional Testing**
+**3.1 Functional Testing**  
 
 - Verification of all input fields and sliders
 - Toggle functionality between Years and Months
@@ -80,8 +80,8 @@ Testing will follow a multi-layered quality assurance approach.
 - Proper reset/refresh behavior
 - Validation of UI consistency across modules
 
-**3.2 Mathematical & Calculation Validation**
-All EMI outputs will be independently validated using the standard EMI formula:
+**3.2 Mathematical & Calculation Validation**  
+All EMI outputs will be independently validated using the standard EMI formula:  
 E= P * r(1+r)^n/((1+r)^n-1)
 
 Where:
@@ -101,7 +101,7 @@ Additionally:
 - Amortization schedule cumulative values must match total interest
 
 
-**3.3 Boundary Value Analysis**
+**3.3 Boundary Value Analysis**  
 Test scenarios include:
 
 - Minimum Loan Amount (0)
@@ -111,9 +111,9 @@ Test scenarios include:
 - Minimum Tenure (0/1 month)
 - Maximum Tenure (30 years / 360 months)
 
-**3.4 Negative Testing**
+**3.4 Negative Testing**  
 
--   	Alphabetic input in numeric fields
+- Alphabetic input in numeric fields
 - Special characters
 - Extremely high values beyond allowed range
 - Empty fields
@@ -121,7 +121,7 @@ Test scenarios include:
 - Copy-paste invalid data
 
 
-**3.5 Regression Testing**
+**3.5 Regression Testing**  
 Regression testing will ensure that updates to calculation logic, UI components, or input mechanisms do not impact existing functionality or financial accuracy.
 The regression suite will:
 
@@ -134,15 +134,14 @@ The regression suite will:
 Regression execution will be triggered after any code change affecting calculation logic, UI behavior, or reporting components.
 
 
-**3.6 UI/UX Testing**
-
+**3.6 UI/UX Testing**  
 - Chart rendering accuracy
 - Synchronization between table and graphs
 - Responsive behavior on smaller screens
 - Layout stability under large numbers
 
 
-**3.7 Cross-Browser Testing**
+**3.7 Cross-Browser Testing**  
 Executed via Playwright automation across:
 
 - Chrome
@@ -157,7 +156,7 @@ Validation includes:
 - Chart rendering
 - File download functionality
 
-**3.8 Performance Testing (Lightweight)**
+**3.8 Performance Testing (Lightweight)**  
 
 - Recalculation time after input change (< 1 second expected)
 - Chart rendering performance
@@ -165,7 +164,7 @@ Validation includes:
 - PDF download completion time
 - Slider responsiveness under rapid changes
 
-**4. Automation Strategy**
+**4. Automation Strategy**  
 Automation will be implemented using Playwright (JavaScript).
 
 Automation coverage includes:
@@ -183,7 +182,7 @@ CI-ready test scripts will:
 - Generate execution reports
 
 
-**5. Test Environment**
+**5. Test Environment**  
 Application URL:
 https://emicalculator.net/
 
@@ -200,7 +199,7 @@ Devices:
 - Tablet
 - Mobile (Responsive validation)
 
-**6. Features to be Tested (for all type of loan)**
+**6. Features to be Tested (for all type of loan)**  
 
 - Loan Amount	
 - Interest Rate  
@@ -212,7 +211,7 @@ Devices:
 - PDF Export	
 
 
-**7. Acceptance Criteria**
+**7. Acceptance Criteria**  
 The application will be considered acceptable when:
 
 1.	EMI matches formula result within ±0.01 tolerance.
@@ -224,7 +223,7 @@ The application will be considered acceptable when:
 7.	Cross-browser execution shows consistent results.
 8.	Automation suite passes 100%.
 
-**8. Entry Criteria**
+**8. Entry Criteria**  
 Testing will begin when:
 
 - Requirements are finalized and approved
@@ -232,7 +231,7 @@ Testing will begin when:
 - Test plan and test cases are approved
 - Test environment is stable
 
-**9. Exit Criteria**
+**9. Exit Criteria**  
 Testing will conclude when:
 
 - All critical and high-priority defects are resolved
@@ -241,7 +240,7 @@ Testing will conclude when:
 - Test Summary Report is generated
 - Stakeholder sign-off is obtained
 
-**10. Risks & Mitigation**
+**10. Risks & Mitigation**  
 
 | Risk                               | Mitigation                     |
 |-----------------------------------|--------------------------------|
@@ -251,7 +250,7 @@ Testing will conclude when:
 | Large input causing UI distortion  | Boundary testing               |
 
 
-**11. Deliverables**
+**11. Deliverables**  
 
 - Test Plan Document
 - Test Cases

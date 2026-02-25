@@ -7,7 +7,9 @@ https://emicalculator.net/
 The application provides loan repayment calculations for:
 
 • Home Loan
+
 • Personal Loan
+
 • Car Loan
 
 The objective of this test plan is to ensure:

@@ -26,7 +26,7 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    /*
+    
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
@@ -35,8 +35,8 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-*/
-    /*  Cross-Device Test Cases  
+
+     //Cross-Device Test Cases  
     {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
@@ -44,6 +44,6 @@ export default defineConfig({
     {
       name: 'Mobile Safari',
       use: { ...devices['iPhone 13'] },
-    },*/
+    },
   ],
 });

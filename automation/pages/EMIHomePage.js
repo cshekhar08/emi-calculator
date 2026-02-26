@@ -24,6 +24,10 @@ export class EMIHomePage {
         // Chart Bar Elements (Highcharts uses SVG rect elements)
         this.chartBars = page.locator('.highcharts-series-0 rect');
         this.chartTooltip = page.locator('.highcharts-tooltip text');
+
+        //Excel Download Button
+        this.exportExcelButton = page.getByRole('button', { name: /Download Excel/i });
+
     }
 
     async navigate() {
@@ -70,5 +74,23 @@ async getTableDataForYear(year) {
         totalPayment: totalPayment.replace(/[₹,]/g, '').trim(),
         balance: balance.replace(/[₹,]/g, '').trim()
     };
-}   
+    }   
+
+async downloadExcel() {
+    // Wait until the button is visible
+    await this.exportExcelButton.scrollIntoViewIfNeeded();
+    
+    // Start waiting for download
+    const [download] = await Promise.all([
+        this.page.waitForEvent('download'),
+        this.exportExcelButton.click()
+    ]);
+
+    /* Save file
+    const filePath = './test-results/emi-data.xlsx';
+    await download.saveAs(filePath);
+    */
+
+    return download;
+}
 }

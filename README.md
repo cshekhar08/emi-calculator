@@ -22,46 +22,46 @@ The framework focuses on ensuring:
 ---
 
 ## Repository Structure
-EMI-CALCULATOR
-│
-├── .github/workflows
-│ └── main.yml # CI/CD pipeline configuration
-│
-├── automation
-│ ├── pages
-│ │ └── EMIHomePage.js # Page Object Model for EMI Calculator
-│ │
-│ ├── tests
-│ │ ├── EMIValidation.spec.js
-│ │ ├── sliderValidation.spec.js
-│ │ ├── chartTableDataValidation.spec.js
-│ │ └── downloadExcel.spec.js
-│ │
-│ ├── utils
-│ │ └── EMIFormula.js # Independent EMI calculation logic
-│ │
-│ ├── playwright.config.js
-│ ├── package.json
-│ └── package-lock.json
-│
-├── test cases # Manual test cases
-│ ├── functional test cases.md
-│ ├── calculation validation test cases.md
-│ ├── boundary value test cases.md
-│ ├── negative test cases.md
-│ ├── chart & table validation test cases.md
-│ ├── file download test cases.md
-│ ├── cross-browser test cases.md
-│ └── cross-device test cases.md
-│
-├── test plan
-│ └── EMI_Calculator_Test_Plan.md
-│
-├── bug-reports
-├── regressionSuitDesign.md
-├── testSummaryReport.md
-├── README.md
-└── LICENSE
+EMI-CALCULATOR  
+│  
+├── .github/workflows  
+│ └── main.yml # CI/CD pipeline configuration  
+│  
+├── automation  
+│ ├── pages  
+│ │ └── EMIHomePage.js # Page Object Model for EMI Calculator  
+│ │  
+│ ├── tests  
+│ │ ├── EMIValidation.spec.js  
+│ │ ├── sliderValidation.spec.js  
+│ │ ├── chartTableDataValidation.spec.js  
+│ │ └── downloadExcel.spec.js  
+│ │  
+│ ├── utils  
+│ │ └── EMIFormula.js # Independent EMI calculation logic  
+│ │  
+│ ├── playwright.config.js  
+│ ├── package.json  
+│ └── package-lock.json  
+│  
+├── test cases # Manual test cases  
+│ ├── functional test cases.md  
+│ ├── calculation validation test cases.md  
+│ ├── boundary value test cases.md  
+│ ├── negative test cases.md  
+│ ├── chart & table validation test cases.md  
+│ ├── file download test cases.md  
+│ ├── cross-browser test cases.md  
+│ └── cross-device test cases.md  
+│  
+├── test plan  
+│ └── EMI_Calculator_Test_Plan.md  
+│  
+├── bug-reports  
+├── regressionSuitDesign.md  
+├── testSummaryReport.md  
+├── README.md  
+└── LICENSE  
 
 ---
 
@@ -127,13 +127,21 @@ Any production defect is added to the regression suite to prevent recurrence.
 npm install
 ```
 ### Run All Tests
+```bash
 npx playwright test
+```
 
 ### Run Tests in Headed Mode
+```bash
 npx playwright test --headed
+```
 
 ### Run a Specific Test File
+```bash
 npx playwright test EMIValidation.spec.js
+```
 
 ### View Test Report
+```bash
 npx playwright show-report
+```

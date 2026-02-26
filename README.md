@@ -58,6 +58,7 @@ EMI-CALCULATOR
 │ └── EMI_Calculator_Test_Plan.md  
 │  
 ├── bug-reports  
+│ └── loanTenureBug.md  
 ├── regressionSuitDesign.md  
 ├── testSummaryReport.md  
 ├── README.md  

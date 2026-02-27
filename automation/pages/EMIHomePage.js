@@ -86,11 +86,6 @@ async downloadExcel() {
         this.exportExcelButton.click()
     ]);
 
-    /* Save file
-    const filePath = './test-results/emi-data.xlsx';
-    await download.saveAs(filePath);
-    */
-
     return download;
 }
 }

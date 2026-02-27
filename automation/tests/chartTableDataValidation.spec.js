@@ -17,7 +17,7 @@ test('Validate Bar Chart and Table synchronization', async ({ page }) => {
     console.log(`Table Data for ${targetYear}:`, tableData);
 
     // 3. Interact with the Bar Chart
-    // We hover over the first bar (which typically represents the first full year)
+    // Hover over the first bar (which typically represents the first full year)
     const firstBar = emiPage.chartBars.first();
     await firstBar.hover();
 

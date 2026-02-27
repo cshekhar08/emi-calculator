@@ -1,7 +1,7 @@
->## Test automation and QA artifacts for EMI Calculator financial web application
+>## Test automation and QA artifacts for EMI Calculator web application
 
 ## Overview
-This repository contains the complete **QA test automation framework and supporting test artifacts** for validating the **EMI Calculator Financial Web Application**  
+This repository contains the complete **QA test automation framework and supporting test artifacts** for validating the **EMI Calculator Web Application**  
 https://emicalculator.net/
 
 The framework focuses on ensuring:
